@@ -2,10 +2,10 @@
   --bg: #0b1220;
   --surface: #111b33;
   --surface-2: #17264c;
-  --text: #f7f8fc;
-  --muted: #cbd3e6;
-  --accent: #5d9cff;
-  --accent-2: #7f6bff;
+  --text: #f9fafc;
+  --muted: #cbcdd4;
+  --accent: #d9ba5b;
+  --accent-2: #f3e39f;
   --danger: #ff6b6b;
 }
 
@@ -44,8 +44,24 @@ body {
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
 }
 
+.hero {
+  display: grid;
+  gap: 18px;
+  place-items: center;
+  text-align: center;
+}
+
+.hero .logo {
+  width: 120px;
+  max-width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255,255,255,0.04);
+  padding: 18px;
+}
+
 .hero h1 {
-  margin: 0 0 12px;
+  margin: 0;
   font-size: clamp(2rem, 3vw, 3.25rem);
   line-height: 1.05;
 }
@@ -114,6 +130,26 @@ input:focus {
   background: rgba(255, 255, 255, 0.04);
   color: var(--muted);
   line-height: 1.6;
+}
+
+.info-box {
+  margin-top: 18px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: rgba(255, 235, 179, 0.1);
+  border: 1px solid rgba(255, 224, 138, 0.24);
+  color: #f7efd2;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+.info-box code {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff9e9;
 }
 
 .download-card {

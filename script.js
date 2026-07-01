@@ -15,7 +15,7 @@ function findApkAsset(assets) {
   return assets.find(asset => asset.name.toLowerCase().endsWith('.apk')) || assets[0];
 }
 
-const repo = 'TON_UTILISATEUR_GITHUB/TON_DEPOT';
+const repo = 'Grace-dev1/siteapk';
 const tag = ''; // Laisser vide pour latest ou mettre un tag exact comme 'v1.0.0'
 
 async function loadRelease() {
